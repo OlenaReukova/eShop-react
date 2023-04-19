@@ -18,7 +18,7 @@ function Home() {
               title="BMW R1250 GS"
               price={11000.0}
               rating={5}
-              image="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
+              image="https://www.devittinsurance.com/wp-content/uploads/2019/06/P90322808_highRes_bmw-r-1250-gs-cosmic-scaled.jpg"
             />
             <Product
               id="100001"
