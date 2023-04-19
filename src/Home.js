@@ -1,5 +1,6 @@
 import React from "react";
 import Product from "./Product";
+import "./Home.css";
 
 function Home() {
   return (
@@ -7,7 +8,7 @@ function Home() {
       <div className="home">
         <div className="home_container">
           <img
-            src="https://static.vecteezy.com/system/resources/previews/001/263/897/original/online-shopping-and-digital-marketing-concept-vector.jpg"
+            src="https://thumbs.dreamstime.com/b/motorbike-road-riding-having-fun-riding-empty-highway-motorcycle-tour-journey-motorbike-road-riding-having-184108376.jpg"
             //width="1022"
             //height="300"
             alt=""
