@@ -22,7 +22,7 @@ function Home() {
           />
           <Product
             id="49538094"
-            title="Triumph Bonneville T120 Gold"
+            title="TRIUMPH BONNEVILLE T120 GOLD"
             price={13100.0}
             rating={4}
             image="images/Triumph Bonneville T120 Gold .png"
@@ -32,14 +32,14 @@ function Home() {
         <div className="home__row">
           <Product
             id="4903850"
-            title="Street Scrambler Triumph"
+            title="STREET SCRAMBLER TRIUMPH"
             price={12000.0}
             rating={3}
             image="images/Street Scrambler Gold.png"
           />
           <Product
             id="23445930"
-            title="Triumph Bobber Gold"
+            title="TRIUMPH BOBBER GOLD"
             price={12000.0}
             rating={5}
             image="images/Triumph Bobber Gold.jpg"
@@ -56,7 +56,7 @@ function Home() {
         <div className="home__row">
           <Product
             id="90829332"
-            title="Triumph Bonneville T100"
+            title="TRIUMPH BONNEVILLE T100"
             price={12900.0}
             rating={4}
             image="images/T100-Blue-LHS-800x560.png"
