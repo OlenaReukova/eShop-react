@@ -1,65 +1,62 @@
 import React from "react";
-import Product from "./Product";
 import "./Home.css";
+import Product from "./Product";
 
 function Home() {
   return (
-    <div>
-      <div className="home">
-        <div className="home_container">
-          <img
-            src="https://thumbs.dreamstime.com/b/motorbike-road-riding-having-fun-riding-empty-highway-motorcycle-tour-journey-motorbike-road-riding-having-184108376.jpg"
-            alt=""
-            className="home_image"
+    <div className="home">
+      <div className="home__container">
+        <img src="images/home_img.jpeg" alt="" className="home__image" />
+
+        <div className="home__row">
+          <Product
+            id="12321341"
+            title="Bennett Mystic 15.6 inch Laptop Shoulder Messenger Sling Office Bag, Water Repellent Fabric for Men and Women (Blue)"
+            price={11.96}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg"
           />
-          <div className="home_row">
-            <Product
-              id="100000"
-              title="BMW R1250 GS"
-              price={11000.0}
-              rating={5}
-              image="https://www.devittinsurance.com/wp-content/uploads/2019/06/P90322808_highRes_bmw-r-1250-gs-cosmic-scaled.jpg"
-            />
-            <Product
-              id="100001"
-              title="Triumph Bonneville Bobber"
-              price={11500.0}
-              rating={5}
-              image="https://www.devittinsurance.com/wp-content/uploads/2019/10/Bobber_Black_hero_RHS-scaled.jpg"
-            />
-          </div>
-          <div className="home_row">
-            <Product
-              id="100002"
-              title="CCM Spitfire Brat"
-              price={10000.0}
-              rating={5}
-              image="https://www.devittinsurance.com/wp-content/uploads/2019/10/CCM-Spitfire-brat-scaled.jpg"
-            />
-            <Product
-              id="100003"
-              title="Cafe Racer: Kawasaki Z900"
-              price={12000.0}
-              rating={5}
-              image="https://www.devittinsurance.com/wp-content/uploads/2018/10/Z900RS-CAFE-Statics-4.jpg"
-            />
-            <Product
-              id="100004"
-              title="Chopper: Harley Davidson Low Rider 2020"
-              price={12500.0}
-              rating={5}
-              image="https://www.devittinsurance.com/wp-content/uploads/2019/10/20_FXLRS_R_INT-scaled.jpg"
-            />
-          </div>
-          <div className="home_row">
-            <Product
-              id="100005"
-              title="Cruiser: Triumph Rocket III"
-              price={15000.0}
-              rating={5}
-              image="https://www.devittinsurance.com/wp-content/uploads/2019/10/3892.jpg"
-            />
-          </div>
+          <Product
+            id="49538094"
+            title="IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"
+            price={239.0}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg"
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            id="4903850"
+            title="All the Light we Cannot See: The Breathtaking World Wide Bestseller Paperback"
+            price={199.99}
+            rating={3}
+            image="https://images-eu.ssl-images-amazon.com/images/I/514kNkerQ0L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+          />
+          <Product
+            id="23445930"
+            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+            price={98.99}
+            rating={5}
+            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+          />
+          <Product
+            id="3254354345"
+            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+            price={598.99}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            id="90829332"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+            price={1094.98}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+          />
         </div>
       </div>
     </div>
