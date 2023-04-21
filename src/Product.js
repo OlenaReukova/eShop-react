@@ -6,9 +6,12 @@ function Product({ id, title, price, rating, image }) {
     <div className="product">
       <div className="product_info">
         <p>{title}</p>
-        <p className="product_price">{price}</p>
+        <p className="product_price">
+          <small>£</small>
+          <strong>{price}</strong>
+        </p>
         <div className="product_rating">
-          {Array(rating)
+          {Array(rating) //rating on the webpage dinamically filled
             .fill()
             .map((_, i) => (
               <p>⭐</p>
