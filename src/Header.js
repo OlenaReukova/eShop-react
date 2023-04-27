@@ -3,6 +3,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -24,6 +25,7 @@ function Header() {
           <span className="nav_itemLineOne">Your</span>
           <span className="nav_itemLineTwo">Shop</span>
         </div>
+        <Link to="/checkout" style={{ textDecoration: "none" }}></Link>
         <div className="nav_itemBasket">
           <ShoppingBasketIcon className="itemBasket" fontSize="large" />
           <span className="nav_itemLineTwo nav_basketCount">0</span>

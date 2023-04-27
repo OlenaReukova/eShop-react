@@ -2,7 +2,11 @@ import React from "react";
 import "./Checkout.css";
 
 function Checkout() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Hello world</h1>
+    </div>
+  );
 }
 
-export default <Checkout></Checkout>;
+export default Checkout;
