@@ -3,7 +3,7 @@ import './CheckoutProduct.css';
 
 function CheckoutProduct() {
   return (
-    <div className='CheckoutProduct'>
+    <div className='checkoutProduct'>
       <img
         src='https://imotorbike.my/news/wp-content/uploads/2021/03/Project-Triumph-TE1-design-2.jpg'
         alt=''

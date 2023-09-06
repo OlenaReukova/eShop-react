@@ -1,4 +1,4 @@
-. checkoutProduct {
+.checkoutProduct {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -6,4 +6,12 @@
 
 .checkout__info {
   padding-left: 20px;
+}
+
+.checkoutProduct__info > button {
+  background: orange;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: rgb(202, 132, 4);
+  color: black;
 }
