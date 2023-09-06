@@ -1,8 +1,8 @@
-import React from "react";
-import "./Checkout.css";
+import React from 'react';
+import './Checkout.css';
 
 function Checkout() {
   return <div></div>;
 }
 
-export default <Checkout></Checkout>;
+export default Checkout;
