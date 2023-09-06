@@ -15,3 +15,9 @@
   border-color: rgb(202, 132, 4);
   color: black;
 }
+
+.checkoutProduct__image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
