@@ -10,7 +10,7 @@ function CheckoutProduct() {
         className='checkoutProduct__image'
       />
       <div className='checkoutProduct__info'>
-        <p className='checkoutProduct__title'>nnnn</p>
+        <p className='checkoutProduct__title'>Triumph TE-1 electric</p>
         <p className='checkoutProduct__price'>
           <small>$</small>
           <strong>20</strong>

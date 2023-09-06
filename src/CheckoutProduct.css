@@ -4,16 +4,16 @@
   margin-bottom: 20px;
 }
 
-.checkout__info {
+.checkoutProduct__info {
   padding-left: 20px;
 }
 
 .checkoutProduct__info > button {
-  background: orange;
+  background: #ff9f00;
   border: 1px solid;
   margin-top: 10px;
-  border-color: rgb(202, 132, 4);
-  color: black;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
 }
 
 .checkoutProduct__image {
