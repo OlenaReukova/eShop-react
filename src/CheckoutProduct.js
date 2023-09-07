@@ -1,21 +1,23 @@
 import React from 'react';
 import './CheckoutProduct.css';
 
-function CheckoutProduct() {
+function CheckoutProduct({ id, title, price, rating, image }) {
   return (
     <div className='checkoutProduct'>
-      <img
-        src='https://imotorbike.my/news/wp-content/uploads/2021/03/Project-Triumph-TE1-design-2.jpg'
-        alt=''
-        className='checkoutProduct__image'
-      />
+      <img src={image} alt='' className='checkoutProduct__image' />
       <div className='checkoutProduct__info'>
-        <p className='checkoutProduct__title'>Triumph TE-1 electric</p>
+        <p className='checkoutProduct__title'>{title}</p>
         <p className='checkoutProduct__price'>
           <small>$</small>
-          <strong>20</strong>
+          <strong>{price}</strong>
         </p>
-        <div className='checkoutProduct__rating'>⭐⭐</div>
+        <div className='checkoutProduct__rating'>
+          {Array(rating) //rating on the webpage dinamically filled
+            .fill()
+            .map((_, i) => (
+              <p>⭐</p>
+            ))}
+        </div>
         <button>Remove from Basket</button>
       </div>
     </div>
