@@ -5,7 +5,7 @@ export const initialState = {
 };
 
 //Selector
-
+//item price is incremented every time the item is selected=price in the basket
 export const getBasketTotal = (basket) => {
   return basket?.reduce((amount, item) => item.price + amount, 0);
 };
