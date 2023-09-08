@@ -21,6 +21,7 @@ function Header() {
         <SearchIcon className='header_searchIcon' />
       </div>
       <div className='header_nav'>
+        <Link to='/login' style={{ textDecoration: 'none' }} />
         <div className='nav_item'>
           <span className='nav_itemLineOne'>Hello Guest</span>
           <span className='nav_itemLineTwo'>Sigh In</span>
