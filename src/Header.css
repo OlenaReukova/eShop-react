@@ -68,6 +68,11 @@
   font-weight: 800;
 }
 
+.nav__itemLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .nav_itemBasket {
   display: flex;
   align-items: center;
