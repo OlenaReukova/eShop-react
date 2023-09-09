@@ -13,7 +13,7 @@ function Header() {
       <Link to='/' style={{ textDecoration: 'none' }}>
         <div className='header_logo'>
           <StorefrontIcon className='header_logoImage' fontSize='large' />
-          <h2 className='header_logoTitle'>eSHOP</h2>
+          <h2 className='header_logoTitle'>TRIUMPH WORLD</h2>
         </div>
       </Link>
       <div className='header_search'>
