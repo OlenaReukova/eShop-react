@@ -23,14 +23,14 @@ function Header() {
       <div className='header_nav'>
         <Link to='/login' style={{ textDecoration: 'none' }}>
           <div className='nav_item'>
-            <span className='nav_itemLineOne'>Hello Guest</span>
+            {/* <span className='nav_itemLineOne'>Hello Guest</span> */}
             <span className='nav_itemLineTwo'>Sigh In</span>
           </div>
         </Link>
-        <div className='nav_item'>
+        {/* <div className='nav_item'>
           <span className='nav_itemLineOne'>Your</span>
           <span className='nav_itemLineTwo'>Shop</span>
-        </div>
+        </div> */}
         <Link to='/checkout' style={{ textDecoration: 'none' }}>
           <div className='nav_itemBasket'>
             <ShoppingBasketIcon className='itemBasket' fontSize='large' />

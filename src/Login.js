@@ -38,7 +38,7 @@ function Login() {
       <Link to='/' style={{ textDecoration: 'none' }}>
         <div className='login__logo'>
           <StorefrontIcon className='login__logoImage' fontSize='large' />
-          <h2 className='login__logoTitle'>eSHOP</h2>
+          <h2 className='login__logoTitle'>TRIUMPH WORLD</h2>
         </div>
       </Link>
 
