@@ -9,7 +9,11 @@ function Checkout() {
   return (
     <div className='checkout'>
       <div className='checkout__left'>
-        <img src='images/ad_electric.png' alt='' className='checkout__ad' />
+        <img
+          src='images/ad_electric200px.jpg'
+          alt=''
+          className='checkout__ad'
+        />
         <div>
           <h2 className='checkout__title'>Your Shopping Basket</h2>
           {basket.map((item) => (
