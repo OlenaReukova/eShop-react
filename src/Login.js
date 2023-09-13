@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
-import StorefrontIcon from '@mui/icons-material/Storefront';
 import { auth } from './firebase';
 
 function Login() {
@@ -37,7 +36,7 @@ function Login() {
     <div className='login'>
       <Link to='/' style={{ textDecoration: 'none' }}>
         <div className='login__logo'>
-          <StorefrontIcon className='login__logoImage' fontSize='large' />
+          <img src='images/motorbike.svg' alt='' />
           <h2 className='login__logoTitle'>TRIUMPH WORLD</h2>
         </div>
       </Link>
