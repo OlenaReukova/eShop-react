@@ -1,3 +1,9 @@
+# E-commerce light version App
+ [Triumph World](https://personal-website--ubiquitous-empanada-60d82a.netlify.app/)
+<img width="1438" alt="triumph world" src="https://github.com/OlenaReukova/eShop-react/assets/34659641/c52c1dc7-5b92-4abb-8800-795817fafd93">
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
