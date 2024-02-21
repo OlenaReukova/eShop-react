@@ -2,10 +2,18 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .checkoutProduct__info {
   padding-left: 20px;
+  @media screen and (max-width: 800px) {
+    margin: 0 auto;
+    padding-left: 0;
+  }
 }
 
 .checkoutProduct__info > button {
@@ -35,13 +43,26 @@
   object-fit: contain;
   width: 180px;
   height: 180px;
+  @media screen and (max-width: 800px) {
+    width: auto;
+    height: auto;
+  }
 }
 
 .checkoutProduct__rating {
   display: flex;
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
 }
 
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+}
+
+.checkoutProduct__price {
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
 }
