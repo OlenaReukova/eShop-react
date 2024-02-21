@@ -21,6 +21,7 @@
 
 .product_rating {
   display: flex;
+  justify-content: center;
 }
 
 .product > img {
@@ -61,4 +62,5 @@
   height: 100px;
   margin-bottom: 15px;
   font-weight: 800;
+  text-align: center;
 }
