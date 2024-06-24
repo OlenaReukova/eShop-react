@@ -9,7 +9,7 @@ function Header() {
     <div className='header'>
       <Link to='/' style={{ textDecoration: 'none' }}>
         <div className='header_logo'>
-          <img src='images/motorbike.svg' alt='' />
+          <img src='images/logo.jpg' alt='' />
           <h2 className='header_logoTitle'>TRIUMPH WORLD</h2>
         </div>
       </Link>
