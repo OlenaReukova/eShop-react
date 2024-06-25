@@ -3,6 +3,7 @@ import Checkout from './Checkout';
 import Header from './Header';
 import Home from './Home';
 import Login from './Login';
+import Footer from './Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,7 +19,11 @@ function App() {
 
           <Route
             path='/'
-            element={[<Header key='header' />, <Home key='home' />]}
+            element={[
+              <Header key='header' />,
+              <Home key='home' />,
+              <Footer key='footer' />,
+            ]}
           />
         </Routes>
       </Router>
