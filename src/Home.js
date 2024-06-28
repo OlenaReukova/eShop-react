@@ -1,18 +1,37 @@
 import React from 'react';
-import './Home.css';
-import Product from './Product';
+import { Box } from '@mui/material';
+
+// import Product from './Product';
 
 function Home() {
   return (
-    <div className='home'>
-      <div className='home__container'>
-        <img
-          src='images/Bobber_Black_hero.png'
-          alt=''
+    <Box
+      className='home'
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }}>
+      <Box
+        className='home__container'
+        sx={{
+          width: '100%',
+          maxWidth: '100%',
+          overflow: 'hidden',
+        }}>
+        <Box
+          component='img'
+          src='images/home.png'
+          alt='Home Image'
+          sx={{
+            width: '100%',
+            height: '100vh',
+            objectFit: 'cover',
+          }}
           className='home__image'
         />
-
-        <div className='home__row'>
+        {/* <div className='home__row'>
           <Product
             id='12321341'
             title='TRIUMPH BONNEVILLE AMERICA LT'
@@ -61,9 +80,9 @@ function Home() {
             rating={4}
             image='images/T100-Blue-LHS-800x560.png'
           />
-        </div>
-      </div>
-    </div>
+        </div> */}
+      </Box>
+    </Box>
   );
 }
 
