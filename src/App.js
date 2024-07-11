@@ -4,13 +4,13 @@ import Checkout from './Checkout';
 import Header from './Header';
 import Home from './Home';
 import Login from './Login';
-import Footer from './Footer';
 import Story from './Story';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Layout from './Layout';
 import Account from './Account';
+import ProductPage from './ProductPage';
 
 const theme = createTheme({
   typography: {
@@ -103,6 +103,10 @@ function App() {
                       <Home key='home' />,
                       <Story key='story' />,
                     ]}
+                  />
+                  <Route
+                    path='/motorcycles'
+                    element={[<ProductPage key='product page' />]}
                   />
                 </Routes>
               </Layout>
