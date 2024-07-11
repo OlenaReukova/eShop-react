@@ -7,6 +7,7 @@ import {
   Typography,
   Button,
   Box,
+  CardActions,
 } from '@mui/material';
 import { useStateValue } from './StateProvider';
 
@@ -27,42 +28,38 @@ function Product({ id, title, price, rating, image }) {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }} minHeight={600}>
-      <Grid container spacing={1} minHeight={600}>
-        <Grid
-          xs={12}
-          sm={12}
-          md={4}
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}></Grid>
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
-          <CardMedia component='img' height='140' image={image} alt={title} />
-          <CardContent>
-            <Typography gutterBottom variant='h6' component='div'>
-              {title}
-            </Typography>
-            <Typography variant='body2' color='text.secondary'>
-              <strong>£{price}</strong>
-            </Typography>
-            <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-              {Array(rating)
-                .fill()
-                .map((_, i) => (
-                  <Typography key={i} variant='body2' color='text.secondary'>
-                    ⭐
-                  </Typography>
-                ))}
-            </Box>
-          </CardContent>
-          <Button variant='contained' color='primary' onClick={addToBasket}>
-            Add to basket
-          </Button>
-        </Card>
-      </Grid>
-    </Box>
+    <Card sx={{ maxWidth: 500 }}>
+      <CardMedia
+        component='img'
+        width={'100%'}
+        height='400'
+        image={image}
+        alt={title}
+        sx={{ objectFit: 'contain' }}
+      />
+      <CardContent>
+        <Typography gutterBottom variant='h6' component='div'>
+          {title}
+        </Typography>
+        <Typography variant='body2' color='text.secondary'>
+          <strong>£{price}</strong>
+        </Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <Typography key={i} variant='body2' color='text.secondary'>
+                ⭐
+              </Typography>
+            ))}
+        </Box>
+      </CardContent>
+      <CardActions>
+        <Button variant='contained' color='primary' onClick={addToBasket}>
+          Add to basket
+        </Button>
+      </CardActions>
+    </Card>
   );
 }
 
