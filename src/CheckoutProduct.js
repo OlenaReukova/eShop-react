@@ -1,6 +1,6 @@
 import React from 'react';
-import './CheckoutProduct.css';
 import { useStateValue } from './StateProvider';
+import { Button, Typography, Box } from '@mui/material';
 
 function CheckoutProduct({ id, title, price, rating, image }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -13,24 +13,45 @@ function CheckoutProduct({ id, title, price, rating, image }) {
   };
 
   return (
-    <div className='checkoutProduct'>
-      <img src={image} alt='' className='checkoutProduct__image' />
-      <div className='checkoutProduct__info'>
-        <p className='checkoutProduct__title'>{title}</p>
-        <p className='checkoutProduct__price'>
+    <Box style={{ display: 'flex', marginBottom: '20px' }}>
+      <img
+        src={image}
+        alt={title}
+        style={{
+          width: '180px',
+          height: '180px',
+          objectFit: 'contain',
+        }}
+      />
+      <Box
+        style={{
+          paddingLeft: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+        }}>
+        <Typography variant='h6'>{title}</Typography>
+        <Typography variant='body2'>
           <small>$</small>
           <strong>{price}</strong>
-        </p>
-        <div className='checkoutProduct__rating'>
-          {Array(rating) //rating on the webpage dinamically filled
+        </Typography>
+        <Box style={{ display: 'flex' }}>
+          {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>⭐</p>
+              <p key={i} style={{ margin: 0 }}>
+                ⭐
+              </p>
             ))}
-        </div>
-        <button onClick={removeFromBasket}>Remove from Basket</button>
-      </div>
-    </div>
+        </Box>
+        <Button
+          variant='contained'
+          color='secondary'
+          onClick={removeFromBasket}
+          style={{ marginTop: '10px' }}>
+          Remove from Basket
+        </Button>
+      </Box>
+    </Box>
   );
 }
 
