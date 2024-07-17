@@ -1,23 +1,37 @@
 import React from 'react';
-import './Subtotal.css';
 import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from './StateProvider';
 import { getBasketTotal } from './reducer';
+import {
+  Box,
+  Typography,
+  Button,
+  Checkbox,
+  FormControlLabel,
+} from '@mui/material';
 
 function Subtotal() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
+
   return (
-    <div className='subtotal'>
+    <Box
+      style={{
+        padding: '20px',
+        border: '1px solid lightgray',
+        backgroundColor: '#fff',
+        borderRadius: '5px',
+      }}>
       <CurrencyFormat
         renderText={(value) => (
           <>
-            <p>
+            <Typography variant='body1' style={{ marginBottom: '10px' }}>
               Subtotal ({basket.length} items): <strong>${value}</strong>
-            </p>
-            <small className='subtotal__gift'>
-              <input type='checkbox' />
-              This order contains a gift
-            </small>
+            </Typography>
+            <FormControlLabel
+              control={<Checkbox color='primary' />}
+              label='This order contains a gift'
+              style={{ marginBottom: '20px' }}
+            />
           </>
         )}
         decimalScale={2}
@@ -25,8 +39,10 @@ function Subtotal() {
         displayType={'text'}
         thousandSeparator={true}
       />
-      <button>Proceed to Checkout</button>
-    </div>
+      <Button variant='contained' color='primary' style={{ width: '100%' }}>
+        Proceed to Checkout
+      </Button>
+    </Box>
   );
 }
 
