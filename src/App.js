@@ -20,35 +20,34 @@ const theme = createTheme({
       fontSize: 16,
     },
     h1: {
-      fontSize: '2.5rem', // Customize as needed
+      fontSize: '2.5rem',
       fontWeight: 700,
       lineHeight: 1.2,
     },
     h2: {
-      fontSize: '2rem', // Customize as needed
+      fontSize: '2rem',
       fontWeight: 600,
       lineHeight: 1.3,
     },
     h3: {
-      fontSize: '1.75rem', // Customize as needed
-      fontWeight: 500,
+      fontSize: '1.75rem',
+      fontWeight: 700,
       lineHeight: 1.4,
     },
-    // You can add more variants like h4, h5, h6, etc.
   },
   palette: {
     primary: {
-      main: '#000000', // Primary color (black)
+      main: '#000000',
     },
     secondary: {
-      main: '#ffffff', // Secondary color (white)
+      main: '#ffffff',
     },
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundColor: '#000000', // Set background color to black
+          backgroundColor: '#000000',
         },
       },
     },
@@ -56,10 +55,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontSize: '1.2rem',
-          backgroundColor: '#000000', // Background color (black)
-          color: '#ffffff', // Text color (white)
+          backgroundColor: '#000000',
+          color: '#ffffff',
           '&:hover': {
-            backgroundColor: '#ff0000', // Background color on hover (red)
+            backgroundColor: '#ff0000',
           },
         },
       },
@@ -67,7 +66,7 @@ const theme = createTheme({
     MuiBox: {
       styleOverrides: {
         root: {
-          backgroundColor: '#ffffff', // Set background color of Box to white
+          backgroundColor: '#ffffff',
         },
       },
     },
