@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Story.css';
 
 export default function Story() {
@@ -35,16 +36,34 @@ export default function Story() {
                 image='/images/pic8.png'
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
-                  Explorer Models
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  sx={{ textTransform: 'uppercase' }}>
+                  Models
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
                   THE TRIUMPH OF YOUR DREAMS, CLOSER THAN EVER
                 </Typography>
               </CardContent>
               <CardActions>
-                {/* <Button size='small'>Share</Button> */}
-                <Button size='small'>Learn More</Button>
+                <Button
+                  size='small'
+                  endIcon={<ArrowRightAltIcon />}
+                  sx={{
+                    color: 'black',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    padding: 0,
+                    backgroundColor: 'white',
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                      color: 'black',
+                    },
+                  }}>
+                  Explorer Models
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -66,7 +85,11 @@ export default function Story() {
                 image='/images/pic6.jpg'
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  sx={{ textTransform: 'uppercase' }}>
                   Offers and Finance
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
@@ -74,8 +97,22 @@ export default function Story() {
                 </Typography>
               </CardContent>
               <CardActions>
-                {/* <Button size='small'>Share</Button> */}
-                <Button size='small'>Learn More</Button>
+                <Button
+                  size='small'
+                  endIcon={<ArrowRightAltIcon />}
+                  sx={{
+                    color: 'black',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    padding: 0,
+                    backgroundColor: 'white',
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                      color: 'black',
+                    },
+                  }}>
+                  Explorer offers and finance
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -97,7 +134,11 @@ export default function Story() {
                 image='/images/pic9.png'
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  sx={{ textTransform: 'uppercase' }}>
                   Triumph Owners
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
@@ -105,8 +146,22 @@ export default function Story() {
                 </Typography>
               </CardContent>
               <CardActions>
-                {/* <Button size='small'>Share</Button> */}
-                <Button size='small'>Learn More</Button>
+                <Button
+                  size='small'
+                  endIcon={<ArrowRightAltIcon />}
+                  sx={{
+                    color: 'black',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    padding: 0,
+                    backgroundColor: 'white',
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                      color: 'black',
+                    },
+                  }}>
+                  Explorer Owners
+                </Button>
               </CardActions>
             </Card>
           </Grid>
