@@ -12,8 +12,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Avatar from '@mui/material/Avatar';
 import { Link, useNavigate } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
-import { auth } from './firebase';
+import { useStateValue } from '../StateProvider';
+
+import { auth } from '../firebase';
 
 const pages = ['MOTORCYCLES', 'ACCESSORIES', 'OWNERS'];
 const settings = ['Login', 'Profile', 'Account', 'Dashboard', 'Logout'];

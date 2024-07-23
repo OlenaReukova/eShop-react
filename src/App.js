@@ -1,16 +1,16 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import './App.css';
-import Checkout from './Checkout';
-import Header from './Header';
-import Home from './Home';
-import Login from './Login';
+import Checkout from './pages/Checkout';
+import Header from './pages/Header';
+import Home from './pages/Home';
+import Login from './pages/Login';
 import Story from './Story';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Layout from './Layout';
-import Account from './Account';
-import ProductPage from './ProductPage';
+import Account from './pages/Account';
+import ProductPage from './pages/ProductPage';
 
 const theme = createTheme({
   typography: {

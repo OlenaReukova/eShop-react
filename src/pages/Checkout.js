@@ -1,7 +1,7 @@
 import React from 'react';
-import CheckoutProduct from './CheckoutProduct';
-import Subtotal from './Subtotal';
-import { useStateValue } from './StateProvider';
+import CheckoutProduct from '../CheckoutProduct';
+import Subtotal from '../Subtotal';
+import { useStateValue } from '../StateProvider';
 import { Box, Typography } from '@mui/material';
 
 function Checkout() {
