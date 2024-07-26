@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import './App.css';
 import Checkout from './pages/Checkout';
-import Header from './pages/Header';
+// import Header from './pages/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Story from './Story';
@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import Layout from './Layout';
 import Account from './pages/Account';
 import ProductPage from './pages/ProductPage';
+import Models from './pages/Models';
 
 const theme = createTheme({
   typography: {
@@ -21,7 +22,7 @@ const theme = createTheme({
     },
     h1: {
       fontSize: '2.5rem',
-      fontWeight: 700,
+      fontWeight: 1000,
       lineHeight: 1.2,
     },
     h2: {
@@ -82,6 +83,14 @@ function App() {
             <Router>
               <Layout>
                 <Routes>
+                  <Route
+                    path='/'
+                    element={[
+                      // <Header key='header' />,
+                      <Home key='home' />,
+                      <Story key='story' />,
+                    ]}
+                  />
                   <Route path='/login' element={[<Login key='login' />]} />
                   <Route
                     path='/account'
@@ -90,23 +99,15 @@ function App() {
                   <Route
                     path='/checkout'
                     element={[
-                      <Header key='header' />,
+                      // <Header key='header' />,
                       <Checkout key='checkout' />,
-                    ]}
-                  />
-
-                  <Route
-                    path='/'
-                    element={[
-                      <Header key='header' />,
-                      <Home key='home' />,
-                      <Story key='story' />,
                     ]}
                   />
                   <Route
                     path='/motorcycles'
                     element={[<ProductPage key='product page' />]}
                   />
+                  <Route path='/models' element={[<Models key='models' />]} />
                 </Routes>
               </Layout>
             </Router>
