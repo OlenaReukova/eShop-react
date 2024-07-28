@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Story.css';
+import { Link } from 'react-router-dom';
 
 export default function Story() {
   return (
@@ -49,6 +50,8 @@ export default function Story() {
               </CardContent>
               <CardActions>
                 <Button
+                  component={Link}
+                  to='/models'
                   size='small'
                   endIcon={<ArrowRightAltIcon />}
                   sx={{
