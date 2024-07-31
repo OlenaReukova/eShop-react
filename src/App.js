@@ -12,6 +12,8 @@ import Layout from './Layout';
 import Account from './pages/Account';
 import ProductPage from './pages/ProductPage';
 import Models from './pages/Models';
+import ModelsExplorerTwoCards from './ModelsExplorerTwoCards';
+import ModelsExplorerCards from './ModelsExplorerCards';
 
 const theme = createTheme({
   typography: {
@@ -85,11 +87,7 @@ function App() {
                 <Routes>
                   <Route
                     path='/'
-                    element={[
-                      // <Header key='header' />,
-                      <Home key='home' />,
-                      <Story key='story' />,
-                    ]}
+                    element={[<Home key='home' />, <Story key='story' />]}
                   />
                   <Route path='/login' element={[<Login key='login' />]} />
                   <Route
@@ -107,7 +105,14 @@ function App() {
                     path='/motorcycles'
                     element={[<ProductPage key='product page' />]}
                   />
-                  <Route path='/models' element={[<Models key='models' />]} />
+                  <Route
+                    path='/models'
+                    element={[
+                      <Models key='models' />,
+                      <ModelsExplorerTwoCards key='ModelsExplorerTwo' />,
+                      <ModelsExplorerCards key='ModelsExplorer' />,
+                    ]}
+                  />
                 </Routes>
               </Layout>
             </Router>
