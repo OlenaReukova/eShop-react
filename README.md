@@ -1,6 +1,8 @@
-# E-commerce light version App
+# Triumph E-commerce App
  [Triumph World](https://personal-website--ubiquitous-empanada-60d82a.netlify.app/)
-<img width="1438" alt="triumph world" src="https://github.com/OlenaReukova/eShop-react/assets/34659641/c52c1dc7-5b92-4abb-8800-795817fafd93">
+
+
+<img width="1433" alt="Triumph app image" src="https://github.com/user-attachments/assets/0fd57452-8f6a-42bd-a40b-d50f30a34c93">
 
 
 
