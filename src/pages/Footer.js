@@ -23,8 +23,7 @@ function Footer() {
               About Us
             </Typography>
             <Typography variant='body2' color='#ffffff'>
-              We are Triumph company, dedicated to providing the best service to
-              our customers.
+              This web site is a project developed for the learning purpose.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
