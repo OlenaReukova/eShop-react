@@ -1,33 +1,37 @@
-import React from 'react';
-import { Box } from '@mui/material';
+import React from "react";
+import { Box } from "@mui/material";
 
 function Home() {
   return (
     <Box
-      className='home'
+      className="home"
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-      }}>
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
       <Box
-        className='home__container'
+        className="home__container"
         sx={{
-          width: '100%',
-          maxWidth: '100%',
-          overflow: 'hidden',
-        }}>
+          width: "100%",
+          maxWidth: "100%",
+          overflow: "hidden",
+        }}
+      >
         <Box
-          component='img'
-          src='images/home.png'
-          alt='Home Image'
+          component="img"
+          src="images/home.png"
+          alt="Home Image"
           sx={{
-            width: '100%',
-            height: '100vh',
-            objectFit: 'cover',
+            width: "100%",
+            maxWidth: "100%",
+            height: "100vh",
+            objectFit: "cover",
+            display: "block",
           }}
-          className='home__image'
+          className="home__image"
         />
       </Box>
     </Box>
