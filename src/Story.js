@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import Card from "@mui/material/Card";
@@ -8,16 +8,44 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import "./Story.css";
 import { Link } from "react-router-dom";
 
 export default function Story() {
   return (
-    <div className="section_story">
-      <h1>WELCOME TO TRIUMPH</h1>
-      <h3 className="section-block__title">WHERE WOULD YOU LIKE TO START?</h3>
-      <Box sx={{ flexGrow: 1 }} minHeight={600}>
-        <Grid container spacing={1} minHeight={600}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "100%",
+        backgroundColor: "white",
+        padding: 2,
+      }}
+    >
+      <Typography
+        variant="h1"
+        sx={{
+          textAlign: "center",
+          fontWeight: "inherit",
+          lineHeight: "90px",
+        }}
+      >
+        WELCOME TO TRIUMPH
+      </Typography>
+      <Typography
+        variant="h2"
+        sx={{
+          textAlign: "center",
+          marginBottom: 4,
+        }}
+      >
+        WHERE WOULD YOU LIKE TO START?
+      </Typography>
+      <Box sx={{ flexGrow: 1, minHeight: 600 }}>
+        <Grid container spacing={2}>
+          {/* First Card */}
           <Grid
             xs={12}
             sm={12}
@@ -26,16 +54,24 @@ export default function Story() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              paddingLeft: 0,
+              paddingRight: 0,
             }}
           >
-            <Card sx={{ maxWidth: 500 }}>
+            <Card
+              sx={{
+                width: "100%",
+                maxWidth: 500,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
               <CardMedia
-                sx={{ objectFit: "cover" }}
                 component="img"
-                width={"100%"}
                 alt="Explorer Models"
                 height="400"
                 image="/images/pic8.png"
+                sx={{ objectFit: "cover" }}
               />
               <CardContent>
                 <Typography
@@ -68,7 +104,7 @@ export default function Story() {
                     },
                   }}
                 >
-                  Explorer Models
+                  Explore Models
                 </Button>
               </CardActions>
             </Card>
@@ -81,15 +117,24 @@ export default function Story() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              paddingLeft: 0,
+              paddingRight: 0,
             }}
           >
-            <Card sx={{ maxWidth: 500 }}>
+            <Card
+              sx={{
+                width: "100%",
+                maxWidth: 500,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
               <CardMedia
-                sx={{ objectFit: "cover" }}
                 component="img"
                 alt="Offers and Finance"
                 height="400"
                 image="/images/pic6.jpg"
+                sx={{ objectFit: "cover" }}
               />
               <CardContent>
                 <Typography
@@ -120,7 +165,7 @@ export default function Story() {
                     },
                   }}
                 >
-                  Explorer offers and finance
+                  Explore Offers and Finance
                 </Button>
               </CardActions>
             </Card>
@@ -133,15 +178,24 @@ export default function Story() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              paddingLeft: 0,
+              paddingRight: 0,
             }}
           >
-            <Card sx={{ maxWidth: 500 }}>
+            <Card
+              sx={{
+                width: "100%",
+                maxWidth: 500,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
               <CardMedia
-                sx={{ objectFit: "cover" }}
                 component="img"
                 alt="Triumph Owners"
                 height="400"
                 image="/images/pic9.png"
+                sx={{ objectFit: "cover" }}
               />
               <CardContent>
                 <Typography
@@ -172,13 +226,13 @@ export default function Story() {
                     },
                   }}
                 >
-                  Explorer Owners
+                  Explore Owners
                 </Button>
               </CardActions>
             </Card>
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </Box>
   );
 }
