@@ -7,8 +7,9 @@ export default function Models() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        minHeight: "100vh",
+        minHeight: "80vh",
         width: "100%",
+        maxWidth: "100%",
         padding: 0,
       }}
     >
@@ -21,7 +22,7 @@ export default function Models() {
           width: "100%",
           maxWidth: "100%",
           alignItems: "center",
-          height: "100vh",
+          height: "80vh",
         }}
       >
         <Box
@@ -31,7 +32,7 @@ export default function Models() {
             backgroundColor: "black",
             width: "100%",
             maxWidth: "100%",
-            height: "100vh",
+            height: "80vh",
             overflow: "hidden",
           }}
         >

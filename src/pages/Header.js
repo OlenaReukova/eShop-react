@@ -55,11 +55,17 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="fixed"
-      sx={{ top: 0, backgroundColor: "black", zIndex: 1100 }}
+      sx={{ top: 0, backgroundColor: "black", zIndex: 1100, maxWidth: "100%" }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="100%">
         <Toolbar disableGutters>
-          <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: 1,
+              maxWidth: "100%",
+            }}
+          >
             <img src="./images/logo.jpg" alt="Logo" style={{ height: 40 }} />
           </Box>
           <Typography
