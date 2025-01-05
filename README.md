@@ -2,7 +2,9 @@
  [Triumph World](https://personal-website--ubiquitous-empanada-60d82a.netlify.app/)
 
 
-<img width="1433" alt="Triumph app image" src="https://github.com/user-attachments/assets/0fd57452-8f6a-42bd-a40b-d50f30a34c93">
+![img triumph screen](https://github.com/user-attachments/assets/ae569529-d2e2-4307-b5da-31551472e94b)
+
+
 
 
 
