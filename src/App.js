@@ -15,6 +15,13 @@ import ModelsExplorerTwoCards from "./ModelsExplorerTwoCards";
 import ModelsExplorerCards from "./ModelsExplorerCards";
 
 const theme = createTheme({
+  MuiContainer: {
+    styleOverrides: {
+      root: {
+        maxWidth: "100%",
+      },
+    },
+  },
   typography: {
     allVariants: {
       fontFamily: "DIN2014-Regular, Arial, sans-serif",
@@ -79,7 +86,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Box sx={{ bgcolor: "#ffffff", height: "100vh" }}>
+        <Box sx={{ bgcolor: "#ffffff", height: "100vh", width: "100%" }}>
           <Router>
             <Layout>
               <Routes>
