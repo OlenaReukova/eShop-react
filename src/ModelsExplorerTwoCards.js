@@ -32,7 +32,13 @@ export default function ModelsExplorerTwoCards() {
               alignItems: "center",
             }}
           >
-            <Card>
+            <Card
+              sx={{
+                boxShadow: "none",
+                border: "none",
+                borderRadius: 0,
+              }}
+            >
               <CardMedia
                 sx={{ objectFit: "cover" }}
                 component="img"
@@ -90,7 +96,13 @@ export default function ModelsExplorerTwoCards() {
               alignItems: "center",
             }}
           >
-            <Card>
+            <Card
+              sx={{
+                boxShadow: "none",
+                border: "none",
+                borderRadius: 0,
+              }}
+            >
               <CardMedia
                 sx={{ objectFit: "cover" }}
                 component="img"

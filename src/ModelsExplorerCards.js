@@ -35,6 +35,9 @@ export default function ModelsExplorerCards() {
                 display: "flex",
                 flexDirection: "column",
                 flexGrow: 1,
+                boxShadow: "none",
+                border: "none",
+                borderRadius: 0,
               }}
             >
               <CardMedia
@@ -101,6 +104,9 @@ export default function ModelsExplorerCards() {
                 display: "flex",
                 flexDirection: "column",
                 flexGrow: 1,
+                boxShadow: "none",
+                border: "none",
+                borderRadius: 0,
               }}
             >
               <CardMedia
@@ -164,6 +170,9 @@ export default function ModelsExplorerCards() {
                 display: "flex",
                 flexDirection: "column",
                 flexGrow: 1,
+                boxShadow: "none",
+                border: "none",
+                borderRadius: 0,
               }}
             >
               <CardMedia
