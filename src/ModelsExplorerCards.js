@@ -65,7 +65,7 @@ export default function ModelsExplorerCards() {
                   and control.
                 </Typography>
               </CardContent>
-              <CardActions sx={{ justifyContent: "flex-end" }}>
+              <CardActions sx={{ justifyContent: "flex-start" }}>
                 <Button
                   component={Link}
                   to="/models"
@@ -133,7 +133,7 @@ export default function ModelsExplorerCards() {
                   bikes themselves.
                 </Typography>
               </CardContent>
-              <CardActions sx={{ justifyContent: "flex-end" }}>
+              <CardActions sx={{ justifyContent: "flex-start" }}>
                 <Button
                   size="small"
                   endIcon={<ArrowRightAltIcon />}
@@ -198,7 +198,7 @@ export default function ModelsExplorerCards() {
                   torque and instant responsiveness.
                 </Typography>
               </CardContent>
-              <CardActions sx={{ justifyContent: "flex-end" }}>
+              <CardActions sx={{ justifyContent: "flex-start" }}>
                 <Button
                   size="small"
                   endIcon={<ArrowRightAltIcon />}
